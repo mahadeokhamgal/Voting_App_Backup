@@ -1,0 +1,27 @@
+<section class="container-fluid">
+  <div class="row">
+    <div class="wrapper sidemenu">
+      <div class="sidebar d-block">
+        <nav class="nav navbar" style="align-items: flex-start; height: 87vh">
+          <ul>
+            <li class="mb-5 mt-5">
+              <span class="nav-link"><a ui-sref="login">Back to login</a></span>
+            </li>
+            <li class="mb-5 mt-5">
+              <span class="nav-link"><a ui-sref="home.welcome">welcome</a></span>
+            </li>
+            <li class="mb-5 mt-5">
+              <span class="nav-link"><a ui-sref="home.vote">Vote</a></span>
+            </li>
+            <li class="mb-5 mt-5">
+              <span class="nav-link"><a ui-sref="home.chat">Chat</a></span>
+            </li>
+            <li class="mb-5 mt-5" ng-show="isAdmin">
+              <span class="nav-link"><a ui-sref="home.result">Check Result</a></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

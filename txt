@@ -1,0 +1,13 @@
+if(routeFactory.publicRoutes().contains(next.url)){
+            console.log("no need for authentication");
+          }else if(next.url == "/home"){
+            console.log(localStorage.getItem('id'));
+            if(localStorage.getItem('id')){
+              console.log("inside allready logged");
+              $location.path('home');
+            }else{
+              event.preventDefault();
+              console.log("not logged in");
+            }
+            console.log("authentication needed");
+          }

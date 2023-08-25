@@ -1,0 +1,27 @@
+<div class="container-fluid h-100">
+  <div class="row">
+    <h1 class="text-center text-light">Click on the button to vote !!!!! </h1>
+  </div>
+  <div style="height: 92%;">
+    <div class="row align-items-center b h-25">
+      <div class="h3 col-10 text-pink" ng-click="showCandidate(1)">Narendra Modi</div>
+      <div class="col-2"><button ng-disabled="isVoted" type="button" ng-click="poll(1)"
+          class="btn btn-primary block">Poll</button></div>
+    </div>
+    <div class="row align-items-center justify-content-center b h-25">
+      <div class="text-pink h3 col-10" ng-click="showCandidate(2)">Rahul Gandhi</div>
+      <div class="col-2"><button ng-disabled="isVoted" type="button" ng-click="poll(2)"
+          class="btn btn-primary block">Poll</button></div>
+    </div>
+    <div class="row align-items-center justify-content-center b h-25">
+      <div class="text-pink h3 col-10" ng-click="showCandidate(3)">Arvinda Kejriwal</div>
+      <div class="col-2"><button ng-disabled="isVoted" type="button" ng-click="poll(3)"
+          class="btn btn-primary block">Poll</button></div>
+    </div>
+    <div class="row align-items-center justify-content-center b h-25">
+      <div class="text-pink h3 col-10" ng-click="showCandidate(4)">Ajit Pawar</div>
+      <div class="col-2"><button ng-disabled="isVoted" type="button" ng-click="poll(4)"
+          class="btn btn-primary block">Poll</button></div>
+    </div>
+  </div>
+</div>

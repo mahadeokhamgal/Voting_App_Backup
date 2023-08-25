@@ -1,0 +1,83 @@
+<!-- <div class="vh-100 bg-login">
+  <div class="row h-100 mb-5">
+    <div class="alert alert-warning text-center margin-top col-6 offset-3" ng-show="err"
+      style="position:fixed; top:30px; z-index: 2;">
+      <span class="glyphicon glyphicon-check">{{errMessage}}</span>
+      <a class="close link-warning" data-dismiss="alert" ng-click="close()">&times;</a>
+    </div>
+    <div class="col-md-10 offset-1 bg-transparent mt-5">
+      <div class="row">
+        <div class="col-md-6 d-block">
+          <img src="../../img/login.jpg" alt="Login image" width="400px">
+        </div>
+        <div class="col-md-6">
+          <form class="form" name="loginForm" ng-submit="submit()" style="width: 100%;">
+            <div class="text-black">
+              <div class="img-fluid mb-5 form-outline d-flex justify-content-center">
+                <img src="../../img/loginLogo.jfif" alt="">
+              </div>
+              <div class="form-outline mb-4">
+                <label for="voterId" class="form-label text-light" style="font-weight: bold;">Voter Id : </label>
+                <input type="text" name="voterId" ng-model="user.id" class="form-control" name="voterId"
+                  placeholder="Voter Id....." ng-required="true">
+                <p>
+                  <span class="error" ng-show="loginForm.voterId.$touched && loginForm.voterId.$error.required">Required
+                    field</span>
+                </p>
+              </div>
+              <div class="form-outline mb-5">
+                <label for="password" class="form-label text-light" style="font-weight: bold;">Password : </label>
+                <input type="password" ng-model="user.password" name="password" class="form-control"
+                  placeholder="Password....." ng-required="true">
+                <p>
+                  <span class="error"
+                    ng-show="loginForm.password.$touched && loginForm.password.$error.required">Required field</span>
+                </p>
+              </div>
+              <div class="mb-4 mt-5">
+                <button class="btn btn-dark block">Login</button>
+              </div>
+              <div class="mt-2">
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="alert alert-warning text-center margin-top col-6 offset-3" ng-show="err"
+      style="position:fixed; top:30px; z-index: 2;">
+      <span class="glyphicon glyphicon-check">{{errMessage}}</span>
+      <a class="close link-warning" data-dismiss="alert" ng-click="close()">&times;</a>
+    </div>
+  <div class="wrapper">
+    <div class="logo">
+        <img src="../../img/login1.jpg" alt="">
+    </div>
+    <div class="text-center mt-4 name">
+        Login Form
+    </div>
+    <form class="p-3 mt-3" name="loginForm" ng-submit="submit()">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="voterId" ng-model="user.id" placeholder="Voter Id....." ng-required="true">
+        </div>
+        <p style="height: 1em;">
+          <span class="error" ng-show="loginForm.voterId.$touched && loginForm.voterId.$error.required">Required
+            field</span>
+        </p>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" ng-model="user.password" name="password"  placeholder="Password" ng-required="true">
+        </div>
+        <p style="height: 1em;">
+          <span class="error"
+            ng-show="loginForm.password.$touched && loginForm.password.$error.required">Required field</span>
+        </p>
+        <button class="btn mt-3" type="submit">Login</button>
+    </form>
+    <div class="text-center fs-6">
+      <span class="text-primary">Don't have account? <a ui-sref="register">Register here..</a></span>
+    </div>
+</div>

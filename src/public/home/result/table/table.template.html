@@ -1,0 +1,19 @@
+<table class="table text-light table-bordered h4" style="width: 700px;">
+  <thead>
+    <tr class="h3">
+      <th scope="col">#</th>
+      <th scope="col">Candidate Name</th>
+      <th scope="col">Candidate Party</th>
+      <th scope="col">Vote Count</th>
+    </tr>
+  </thead>
+
+  <tbody ng-repeat="candidate in candidates">
+    <tr>
+      <th scope="row">{{candidate.id}}</th>
+      <td>{{candidate.name}}</td>
+      <td>{{candidate.party}}</td>
+      <td class="text-center">{{candidate.votes}}</td>
+    </tr>
+  </tbody>
+</table>

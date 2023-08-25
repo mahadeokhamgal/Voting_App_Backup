@@ -1,0 +1,162 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "name": "Narendra Modi",
+      "party": "BJP",
+      "votes": 15
+    },
+    {
+      "id": 2,
+      "name": "Rahul Gandhi",
+      "party": "Congress",
+      "votes": 24
+    },
+    {
+      "id": 3,
+      "name": "Arvinda Kejriwal",
+      "party": "AAP",
+      "votes": 15
+    },
+    {
+      "id": 4,
+      "name": "Ajit Pawar",
+      "party": "Rashtrawadi",
+      "votes": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "admin",
+      "email": "admin@email.com",
+      "password": "Admin@123",
+      "cpassword": "Admin@123",
+      "checkbox": true,
+      "id": 467,
+      "role": "admin",
+      "isVoted": true
+    },
+    {
+      "name": "nikita",
+      "email": "nikitha@email.com",
+      "password": "Nikitha@123",
+      "cpassword": "Nikitha@123",
+      "checkbox": true,
+      "id": 645,
+      "role": "admin",
+      "isVoted": true
+    },
+    {
+      "name": "vedanti",
+      "email": "vedanti@email.com",
+      "password": "Vedanti@123",
+      "cpassword": "Vedanti@123",
+      "checkbox": true,
+      "id": 925,
+      "role": "user",
+      "isVoted": true
+    },
+    {
+      "name": "name",
+      "email": "email@email.com",
+      "password": "Pass@123",
+      "cpassword": "Pass@123",
+      "checkbox": true,
+      "id": 154,
+      "role": "user",
+      "isVoted": "no"
+    },
+    {
+      "name": "name",
+      "email": "email@email.com",
+      "password": "Pass@123",
+      "cpassword": "Pass@123",
+      "checkbox": true,
+      "id": 814,
+      "role": "user",
+      "isVoted": "no"
+    },
+    {
+      "name": "SourabhMore",
+      "email": "email@email.com",
+      "password": "Sourabh@123",
+      "cpassword": "Sourabh@123",
+      "checkbox": true,
+      "id": 272,
+      "role": "user",
+      "isVoted": "no"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "Abc@1234",
+      "cpassword": "Abc@1234",
+      "checkbox": true,
+      "id": 637,
+      "role": "user",
+      "isVoted": "no"
+    },
+    {
+      "name": "author",
+      "email": "email@email.com",
+      "password": "Pass@1234",
+      "cpassword": "Pass@1234",
+      "checkbox": true,
+      "id": 986,
+      "role": "user",
+      "isVoted": "no"
+    }
+  ],
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Narendra Modi",
+      "birthplace": "Gujrat, India",
+      "slogan": "Good days are coming.",
+      "site": "https://en.wikipedia.org/wiki/Bharatiya_Janata_Party"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Gandhi",
+      "birthplace": "Delhi, India",
+      "slogan": "India absorbs things; India's not a divisive place.",
+      "site": "https://en.wikipedia.org/wiki/Indian_National_Congress"
+    },
+    {
+      "id": 3,
+      "name": "Arvinda Kejriwal",
+      "birthplace": "Haryana, India",
+      "slogan": "No one gets punished for corruption in our country.",
+      "site": "https://en.wikipedia.org/wiki/Aam_Aadmi_Party"
+    },
+    {
+      "id": 4,
+      "name": "Ajit Pawar",
+      "birthplace": "Maharashtra, India",
+      "slogan": "Farmer has the first right on countrys resources.",
+      "site": "https://en.wikipedia.org/wiki/Nationalist_Congress_Party"
+    }
+  ],
+  "party": [
+    {
+      "id": 1,
+      "name": "BJP",
+      "about": ""
+    },
+    {
+      "id": 2,
+      "name": "Congress",
+      "about": ""
+    },
+    {
+      "id": 3,
+      "name": "AAP",
+      "about": ""
+    },
+    {
+      "id": 4,
+      "name": "NCP",
+      "about": ""
+    }
+  ]
+}

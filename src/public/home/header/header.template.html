@@ -1,0 +1,13 @@
+<section>
+  <div class="alert alert-success text-center margin-top col-6 offset-3" ng-show="success" style="position:fixed; top:30px; z-index: 2;">
+    <span class="glyphicon glyphicon-check">{{successMessage}}</span>
+    <a class="close" data-dismiss="alert" ng-click="close()">&times;</a>
+  </div>
+  <div class="row bg-dark">
+    <div class="col-md-1 mt-1"><img class="img-responsive pull-right" src="../../img/header.png" alt="" width="50px"></div>
+    <div class="col-md-6 offset-md-2 text-center h1 text-weight-bold text-warning">Online Voting System Portal</div>
+    <div class="col-2 mt-3 offset-1 text-light">Welcome : &nbsp;{{user}}
+      <a ng-click="logout()">Logout !</a>
+    </div>
+  </div>
+</section>

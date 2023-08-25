@@ -1,0 +1,106 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="alert alert-success text-center margin-top col-6 offset-3 row" ng-show="success" style="position:fixed; top:30px; z-index: 2;">
+      <span class="glyphicon glyphicon-check col-9">{{successMessage}}</span>
+      <a class="close col-1 offset-2" data-dismiss="alert" ng-click="close()">&times;</a>
+    </div>
+    <div class="alert alert-warning text-center margin-top col-6 offset-3 row" ng-show="err" style="position:fixed; top:30px; z-index: 2;">
+      <span class="glyphicon glyphicon-check col-9">{{errMessage}}</span>
+      <a class="close col-1 offset-2" data-dismiss="alert" ng-click="close2()">&times;</a>
+    </div>
+    <div class="col-md-6 offset-md-3">
+      <div class="card text-black bg-register" style="border-radius: 25px">
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <p class="text-center h2 mb-3 text-light">Registration Form</p>
+            <div class="col-md-10 col-lg-6 col-xl-5">
+              <form class="" name="registerForm" ng-submit="submit()">
+                <div class="d-flex flex-row align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label text-light" for="name">Your Name</label>
+                    <input type="text" placeholder="Your Name" id="name" name="name" ng-model="user.name"
+                      class="form-control" ng-minlength="3" ng-maxlength="15" ng-pattern="nameRegex"
+                      ng-required="true" />
+                    <p><span ng-show="registerForm.name.$touched && registerForm.name.$invalid">
+                        <span class="error" ng-show="registerForm.name.$error.required">Required field</span>
+                        <span class="error"
+                          ng-show="!registerForm.name.$error.required && registerForm.name.$error.minlength">Minimum 3
+                          characters</span>
+                        <span class="error"
+                          ng-show="!registerForm.name.$error.required && !registerForm.name.$error.minlength && registerForm.name.$error.maxlength">Maximum
+                          15 characters</span>
+                        <span class="error"
+                          ng-show="!registerForm.name.$error.required && !registerForm.name.$error.minlength && !registerForm.name.$error.maxlength && registerForm.name.$error.pattern">No
+                          special characters allowed</span>
+                      </span></p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label text-light" for="email">Your Email</label>
+                    <input type="text" placeholder="email@email.com" id="email" name="email" ng-model="user.email"
+                      class="form-control" ng-required="true" ng-pattern="emailRegex" />
+                    <p><span ng-show="registerForm.email.$touched && registerForm.email.$invalid">
+                        <span class="error" ng-show="registerForm.email.$error.required">Required field</span>
+                        <span class="error"
+                          ng-show="!registerForm.email.$error.required && registerForm.email.$error.pattern">Enter valid
+                          email address</span>
+                      </span></p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label text-light" for="password">Password</label>
+                    <input type="password" id="password" name="password" ng-model="user.password" class="form-control"
+                      ng-required="true" ng-pattern="passwordRegex" />
+                    <p><span ng-show="registerForm.password.$touched && registerForm.password.$invalid">
+                        <span class="error" ng-show="registerForm.password.$error.required">Required field</span>
+                        <span class="error"
+                          ng-show="!registerForm.password.$error.required && registerForm.password.$error.pattern">Weak
+                          password</span>
+                      </span></p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label text-light" for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword" ng-model="user.cpassword"
+                      class="form-control" ng-pattern="user.password" />
+                    <p><span class="error" ng-show="registerForm.cpassword.$touched && registerForm.cpassword.$invalid">
+                        Password doesn't match
+                      </span></p>
+                  </div>
+                </div>
+
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input" ng-model="user.checkbox" type="checkbox" value="" id="checkbox"
+                    ng-required="true" />
+                  <label class="form-check-label text-light" for="checkbox">
+                    I agree all statements in <a href="#!">Terms of service</a>
+                  </label>
+                  <p><span ng-show="registerForm.checkbox.$touched && registerForm.checkbox.$invalid">
+                      <span class="error" ng-show="registerForm.checkbox.$error.required">Please accept policy agreement
+                        to continue to register</span>
+                    </span></p>
+                </div>
+
+                <div class="d-flex justify-content-center mb-4 mb-lg-4">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Register
+                  </button>
+                </div>
+                <p>Allready Registered ? <a ui-sref="login">Log in</a></p>
+              </form>
+            </div>
+            <div class="col-md-10 col-lg-6 d-flex align-items-center">
+              <img src="../../img/register.jpg" class="img-fluid" alt="Sample image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
